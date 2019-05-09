@@ -1,0 +1,21 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/test_demo-app/test_demo-app.js",
+  "sources": [
+    "src/**/*"
+  ],
+  "extraDependencies": [
+    "manifest.json",
+    "node_modules/@webcomponents/webcomponentsjs/**"
+  ],
+  "npm": true,
+  "builds": [
+    {
+      "preset": "es5-bundled",
+      "bundle": true,
+      "js": {
+        "minify": true
+      }
+    }
+  ]
+}
